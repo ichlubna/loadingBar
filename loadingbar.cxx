@@ -1,8 +1,12 @@
+module;
+
 #include <iostream>
 #include <iomanip>
 #include <math.h>
 
-class LoadingBar
+export module loadingbar;
+
+export class LoadingBar
 {
     public:
     LoadingBar(size_t total, bool printWidthAdd=true, bool printOnSameLine=true, size_t printStepSize=1) : totalCount{total}, stepSize{printStepSize}, addPrint{printWidthAdd} 
